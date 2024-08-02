@@ -1,0 +1,1348 @@
+@media screen and (min-width:500px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    nav {
+        z-index:100;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        box-sizing: border-box;
+        background-color:rgb(227, 82, 29);
+        position: sticky;
+        top: 0px;
+    }
+
+    nav h1 {
+        font-size: 36px;
+        line-height: auto;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        color:white;
+        margin: 0px;
+        position: sticky;
+    }
+
+    nav div {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300px;
+        color:white;
+    }
+
+    header {
+        box-sizing: border-box;
+        width: 100vw;
+    }
+
+    .header {
+        background-color: #024691;
+        display: flex;
+        align-items: center;
+        height: 35px;
+    }
+
+    header div {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .header div span,
+    .header div span button {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 300;
+        color: white;
+        font-family: sans-serif;
+        background-color: #024691;
+    }
+
+
+    .header span button {
+        padding: 3px 10px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+    }
+
+    .header span button:hover {
+        color: blue;
+        background-color: gold;
+    }
+
+    * {
+        button:hover {
+            color: blue;
+            background-color: gold;
+        }
+    }
+
+    .header span a {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 25px;
+        color: white;
+        font-weight: 300;
+    }
+
+    .header span a:hover {
+        color: gold;
+    }
+
+    #header-cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 200px;
+        align-items: center;
+    }
+
+    #header-cont>div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 10px 0px;
+    }
+
+    #header-cont>div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    #header-cont>div:nth-child(1)>span:nth-child(1),
+    #header-cont>div:nth-child(1)>span:nth-child(3) {
+        color: rgb(235, 8, 18);
+    }
+
+    #header-cont>div:nth-child(2)>span:nth-child(2) {
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        font-size: 27px;
+        color: rgb(235, 8, 18);
+    }
+
+    #header-cont>div:nth-child(2)>span:nth-child(3) {
+        font-family: sans-serif;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 600;
+        color: rgb(68, 68, 68);
+    }
+
+    #header-cont>div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 25px 0px;
+    }
+
+    #header-cont>div:nth-child(3) span img {
+        width: 200px;
+        border: 0.5px solid black;
+        padding: 4px;
+    }
+
+    /* this is the region of article 1 */
+    .article-1 {
+        width: 100vw;
+    }
+
+    .article-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #024691;
+    }
+
+    .article-bar button {
+        margin: 10px 20px;
+        color: white;
+        background-color: #024691;
+        padding: 7px 10px;
+        border-radius: 8px;
+    }
+
+    .article-bar button:hover {
+        background-color: orangered;
+        color: white;
+    }
+
+    .bkg-img {
+        height: 65vh;
+        width: 97.5 vw;
+        background-image: url(https://www.mwu.edu.np/wp-content/uploads/2024/05/4-1536x506.jpg);
+        box-shadow: rgba(149, 157, 165, 0.2);
+        animation: changeImage 20s linear infinite;
+    }
+
+    @keyframes changeImage {
+        0% {
+            background-image: url(https://www.mwu.edu.np/wp-content/uploads/2024/05/4-1536x506.jpg);
+        }
+
+        25% {
+            background-image: url(https://www.mwu.edu.np/wp-content/uploads/2024/04/IMG_9205-1536x506.jpg);
+        }
+
+        50% {
+            background-image: url(https://www.mwu.edu.np/wp-content/uploads/2024/03/MU-1536x506.jpg);
+        }
+
+        75% {
+            background-image: url(https://www.mwu.edu.np/wp-content/uploads/2024/05/3-1536x506.jpg);
+        }
+
+        100% {
+            background-image: url(https://www.mwu.edu.np/wp-content/uploads/2024/04/IMG_9205-1536x506.jpg);
+        }
+    }
+
+    /* this is the region of introduction */
+   /* this is the region for article 2 */
+    .article-2 {
+        display: flex;
+        flex-direction: row;
+        gap: 0px 50px;
+        padding: 100px 80px;
+        height: 80vh;
+    }
+
+    #introduction {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #intro-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #intro-1>div:nth-child(1) {
+        color: rgb(225, 106, 86);
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 32px;
+        font-style: normal;
+    }
+
+    #intro-1>div:nth-child(2) {
+        font-size: 35px;
+        font-weight: 300;
+        color: rgb(44, 48, 56);
+        font-style: normal;
+        line-height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #intro-2 {
+        display: flex;
+        flex-direction: row;
+        gap: 0px 50px;
+    }
+
+    #intro-2 div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #message-from-vice-chancellor>div:nth-child(1) {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        line-height: 22px;
+        font-style: normal;
+    }
+
+    #message-from-vice-chancellor>div:nth-child(2) img {
+        width: 250px;
+        border: 2px solid whitesmoke;
+        border-radius: 10px;
+    }
+
+    .readmore {
+        background-color: rgb(255, 106, 86);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 10px;
+        font-style: normal;
+        font-family: sans-serif;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+
+    .readmore-2 {
+        background-color: #0F5097;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 10px;
+        font-style: normal;
+        font-family: sans-serif;
+        color: white;
+        padding: 15px 30px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    #message-from-vice-chancellor {
+        width: 750px;
+    }
+
+    .same {
+        color: rgb(72, 86, 102);
+        line-height: 32px;
+        font-weight: 300;
+        font-size: 18px;
+        font-style: normal;
+        font-family: sans-serif;
+    }
+
+    #intro-2 div span img {
+        width: 50px;
+    }
+
+    /* new div for the new courses */
+
+    .courses {
+        background-color: #0F5097;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px 0px;
+        width: 100vw;
+    }
+
+    .courses>div:nth-child(1) {
+        font-style: normal;
+        font-weight: 300;
+        color: white;
+        font-size: 35px;
+        line-height: 40px;
+        font-family: sans-serif;
+    }
+
+    .courses>div:nth-child(2) {
+        font-style: normal;
+        font-weight: 300;
+        color: white;
+        font-size: 17px;
+        line-height: 25px;
+        font-family: sans-serif;
+    }
+
+    #course-cont {
+        height: 150px;
+        width: 300px;
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        box-shadow: 5px 5px 10px rgba(0, 0,0,0.3);
+        transition: transform 0.1s ease-in-out;
+    }
+
+}
+
+#course-cont:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+    #course-cont>span:nth-last-child(1) {
+        font-style: normal;
+        font-size: 23px;
+        line-height: 32px;
+        color: black;
+        font-weight: 600;
+    }
+
+    #course-cont span img {
+        width: 50px;
+        border-radius: 50px;
+
+    }
+
+    .courses>div:nth-child(3) {
+        display: flex;
+        flex-direction: row;
+        gap: 0px 10px;
+    }
+
+    .courses>div:nth-last-child(1) button {
+        width: 30px;
+        height: 30px;
+        font-size: 26px;
+        line-height: 26px;
+        font-style: normal;
+        font-weight: 400;
+        color: black;
+    }
+
+    /* Events and news updates */
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap: 40px 0px;
+        width: 100vw;
+    }
+
+    .section-2 {
+        height: 80vh;
+        border: 2px solid gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+        background-color: #ed5a25;
+    }
+
+    .child-section-2 {
+        width: 40vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0px;
+        background-color: whitesmoke;
+        padding: 10px;
+    }
+
+    .child-section-2>div:nth-child(1),
+    .section-1>div:nth-child(1) {
+        font-family: serif;
+        font-style: normal;
+        font-size: 17px;
+        line-height: 32px;
+        font-weight: 300;
+        color: red;
+    }
+
+    .child-section-2>div:nth-child(2),
+    .section-1>div:nth-child(2) {
+        font-family: serif;
+        font-style: normal;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 35px;
+        color: rgb(44, 48, 56);
+    }
+
+    .child-section-2>div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        gap: 15px 0px;
+        overflow-y: scroll;
+    }
+
+    a:hover {
+        color: blue;
+    }
+
+    #event-cont {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #event-cont div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px 0px;
+    }
+
+    #event-cont div span img {
+        width: 310px;
+        height: 150px;
+    }
+
+    /* this section is about the inroll info */
+    .enrollment {
+        height: 35vh;
+        background-color: #165190;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .enroll-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px 0px;
+    }
+
+    .enroll-cont>span:nth-child(1) {
+        font-size: 50px;
+        line-height: 35px;
+        color: white;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .enroll-cont>span:nth-child(2) {
+        font-size: 23px;
+        line-height: 25px;
+        color: white;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    /* this is the place of the acamedics partners region */
+    .academics-partners {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .academics-partners>div:nth-child(1) {
+        font-style: normal;
+        font-size: 17px;
+        line-height: 32px;
+        color: rgb(225, 106, 86);
+        font-family: sans-serif;
+    }
+
+    .academics-partners>div:nth-child(2) {
+        font-style: normal;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 300;
+        line-height: 40px;
+        font-size: 35px;
+        color: rgb(44, 48, 56);
+    }
+
+    .academics-partners>div:nth-child(3) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .academics-partners-photo div {
+        width: 250px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.143);
+    }
+
+    .academics-partners-photo {
+        display: flex;
+        gap: 0px 10px;
+    }
+
+    .academics-partners div img {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    /* footer region */
+    footer {
+        display: flex;
+        height: 100vh;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0px 30px;
+        background-color: #072238;
+    }
+
+    footer div {
+        height: 60vh;
+    }
+
+    footer>div:nth-child(1) a,
+    footer div span {
+        font-family: sans-serif;
+        font-size: 17px;
+        line-height: 24px;
+        color: rgb(199, 224, 248);
+    }
+
+    footer>div:nth-last-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 20px 0px;
+    }
+
+    footer>div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 20px 0px;
+    }
+
+    footer>div:nth-child(2) {
+        height: 350px;
+        width: 300px;
+        background-color: gray;
+        display: flex;
+        flex-direction: row;
+        display: none;
+    }
+
+    footer>div:nth-last-child(1) span a img {
+        width: 50px;
+        height: 50px;
+        background-color: none;
+        border-radius: 50px;
+        transition: transform 0.4s ease-in-out;
+
+    }
+
+    footer>div:nth-last-child(1) span a img:hover {
+        transform: rotate(360deg);
+    }
+
+    .footer-useful-link {
+        font-style: normal;
+        font-size: 22px;
+        line-height: 27px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .footer-bar {
+        height: 10vh;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300px;
+        line-height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #001020;
+        color: white;
+    }
+
+/* mobile view */
+@media screen and (max-width:499px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        background-color: whitesmoke;
+        z-index: 100;
+    }
+
+    nav h1 {
+        color: rgb(37, 134, 219);
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+
+    }
+
+    nav div {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300px;
+        color: rgb(72, 86, 102);
+        margin-bottom: 20px;
+        z-index: 10;
+    }
+
+    header {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    header div {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .header div span,
+    .header div span button {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 300;
+        color: white;
+        font-family: sans-serif;
+        background-color: #024691;
+    }
+
+    .header {
+        background-color: #024691;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+    }
+
+    .header span button {
+        display: none;
+    }
+
+    .header span button:hover {
+        color: blue;
+        background-color: orangered;
+    }
+
+    * {
+        button:hover {
+            color: blue;
+            background-color: yellow;
+        }
+    }
+
+    .header span a {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 25px;
+        color: white;
+        font-weight: 300;
+    }
+
+    .header span a:hover {
+        color: gold;
+    }
+
+    #header-cont {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 250px;
+        align-items: center;
+    }
+
+    #header-cont>div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    #header-cont>div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    #header-cont>div:nth-child(1)>span:nth-child(1),
+    #header-cont>div:nth-child(1)>span:nth-child(3) {
+        color: rgb(235, 8, 18);
+    }
+
+    #header-cont>div:nth-child(2)>span:nth-child(2) {
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        font-size: 27px;
+        color: rgb(235, 8, 18);
+    }
+
+    #header-cont>div:nth-child(2)>span:nth-child(3) {
+        font-family: sans-serif;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 600;
+        color: rgb(68, 68, 68);
+    }
+
+    #header-cont>div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 25px 0px;
+    }
+
+    #header-cont>div:nth-child(3) span img {
+        width: 200px;
+        border: 0.5px solid black;
+        padding: 4px;
+    }
+
+    .article-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #024691;
+    }
+
+    .article-bar button {
+        margin: 10px 20px;
+        color: white;
+        background-color: #024691;
+        padding: 7px 10px;
+        border-radius: 8px;
+        box-shadow: red;
+    }
+
+    .article-bar button:hover {
+        color: white;
+        background-color: #E7700D;
+    }
+
+    .bkg-img {
+        height: 65vh;
+        width: 97.5 vw;
+        background-image: url(https://www.mwu.edu.np/wp-content/uploads/2024/05/4-1536x506.jpg);
+        box-shadow: rgba(149, 157, 165, 0.2);
+        animation: changeImage 20s linear infinite;
+        background-repeat: no-repeat;
+    }
+
+    @keyframes changeImage {
+        0% {
+            background-image: url(https://www.mwu.edu.np/wp-content/uploads/2024/05/4-1536x506.jpg);
+        }
+
+        25% {
+            background-image: url(https://www.mwu.edu.np/wp-content/uploads/2024/04/IMG_9205-1536x506.jpg);
+        }
+
+        50% {
+            background-image: url(https://www.mwu.edu.np/wp-content/uploads/2024/03/MU-1536x506.jpg);
+        }
+
+        75% {
+            background-image: url(https://www.mwu.edu.np/wp-content/uploads/2024/05/3-1536x506.jpg);
+        }
+
+        100% {
+            background-image: url(https://www.mwu.edu.np/wp-content/uploads/2024/04/IMG_9205-1536x506.jpg);
+        }
+
+    }
+
+    /* this is the region of introduction of dean */
+    .article-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+
+    }
+
+    #introduction {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    #intro-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #intro-1>div:nth-child(1) {
+        color: rgb(225, 106, 86);
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 32px;
+        font-style: normal;
+    }
+
+    #intro-1>div:nth-child(2) {
+        font-size: 25px;
+        font-weight: 300;
+        color: rgb(44, 48, 56);
+        font-style: normal;
+        line-height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #intro-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    #intro-2 div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #message-from-vice-chancellor>div:nth-child(1) {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        line-height: 15px;
+        font-style: normal;
+    }
+
+    #message-from-vice-chancellor>div:nth-child(2) img {
+        width: 240px;
+        height: 240px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .readmore {
+        background-color: rgb(255, 106, 86);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 10px;
+        font-style: normal;
+        font-family: sans-serif;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+
+    .readmore-2 {
+        background-color: #0F5097;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 10px;
+        font-style: normal;
+        font-family: sans-serif;
+        color: white;
+        padding: 15px 30px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .same {
+        color: rgb(72, 86, 102);
+        line-height: 32px;
+        font-weight: 300;
+        font-size: 18px;
+        font-style: normal;
+        font-family: sans-serif;
+    }
+
+    #intro-2 div span img {
+        width: 50px;
+    }
+
+    /* this is the region of courses */
+    .courses {
+        background-color: #0F5097;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px 0px;
+        z-index: 3;
+
+    }
+
+    .courses>div:nth-child(1) {
+        font-style: normal;
+        font-weight: 300;
+        color: white;
+        font-size: 25px;
+        line-height: 40px;
+        font-family: sans-serif;
+        z-index: 10;
+    }
+
+    .courses>div:nth-child(2) {
+        font-style: normal;
+        font-weight: 300;
+        color: white;
+        font-size: 20px;
+        line-height: 25px;
+        font-family: sans-serif;
+        z-index: 10;
+    }
+
+    .courses>div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        gap: 20px 0px;
+    }
+
+    #course-cont {
+        height: 150px;
+        width: 310px;
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    #course-cont:hover {
+        transform: scale(1.1);
+        z-index: 5;
+    }
+
+    #course-cont>span:nth-last-child(1) {
+        font-style: normal;
+        font-size: 17px;
+        line-height: 32px;
+        color: black;
+        font-weight: 600;
+    }
+
+    #course-cont span img {
+        width: 50px;
+        border-radius: 50px;
+    }
+
+    .courses>div:nth-last-child(1) button {
+        width: 30px;
+        height: 30px;
+        font-size: 26px;
+        line-height: 26px;
+        font-style: normal;
+        font-weight: 400;
+        color: black;
+    }
+
+    /* Events and news updates */
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 150vh;
+        width: 100vw;
+    }
+
+    .section-2 {
+        height: 80vh;
+        border: 2px solid gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+        background-color: #ed5a25;
+    }
+
+    .child-section-2 {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0px;
+        background-color: whitesmoke;
+        padding: 10px;
+    }
+
+    .child-section-2>div:nth-child(1),
+    .section-1>div:nth-child(1) {
+        font-family: serif;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 300;
+        color: red;
+    }
+
+    .child-section-2>div:nth-child(2),
+    .section-1>div:nth-child(2) {
+        font-family: serif;
+        font-style: normal;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 35px;
+        color: rgb(44, 48, 56);
+    }
+
+    .child-section-2>div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        gap: 15px 0px;
+        overflow-y: scroll;
+    }
+
+    .child-section-2>div:nth-child(3) a:hover {
+        color: blue;
+    }
+
+    .child-section-2>div:nth-child(3) a:active {
+        color: red;
+    }
+
+    #event-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px 0px;
+    }
+
+    #event-cont div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px 0px;
+        width: 88vw;
+    }
+
+    #event-cont div span img {
+        width: 310px;
+        height: 150px;
+    }
+
+    /* this section is about the enroll info */
+    .enrollment {
+        width: 99vw;
+        height: 50vh;
+        border: 2px solid whitesmoke;
+        background-color: #165190;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .enroll-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px 0px;
+    }
+
+    .enroll-cont>span:nth-child(1) {
+        font-size: 25px;
+        line-height: 20px;
+        color: white;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .enroll-cont>span:nth-child(2) {
+        font-size: 18px;
+        line-height: 15px;
+        color: white;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    /* this is the place of the acamedics partners region */
+    .academics-partners {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px 0px;
+        align-items: center;
+        height: 80vh;
+        width: 100vw;
+        padding: 20px 0px;
+        z-index: 3;
+    }
+
+    .academics-partners>div:nth-child(1) {
+        font-style: normal;
+        font-size: 20px;
+        line-height: 32px;
+        color: rgb(225, 106, 86);
+        font-family: sans-serif;
+        z-index: 10;
+
+    }
+
+    .academics-partners>div:nth-child(2) {
+        font-style: normal;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 300;
+        line-height: 40px;
+        font-size: 25px;
+        color: rgb(44, 48, 56);
+        z-index: 10;
+    }
+.academics-partners>div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+}
+    .academics-partners-photo {
+        width: 300px;
+        height: 80%;
+        gap: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.143);
+        z-index: 1;
+        border: none;
+    }
+
+    .academics-partners-photo img {
+        display: flex;
+        width: 290px;
+        height: 110px;
+        flex-direction: column;
+        gap: 10px 10px;
+        border: 2px solid whitesmoke;
+        z-index: 10;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .academics-partners-photo div img {
+        display: flex;
+        flex-direction: column;
+        gap: 0px 10px;
+    }
+
+    .academics-partners div img {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* footer region */
+    footer {
+        display: flex;
+        height: 80vh;
+        width: 90vw;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0px 20px;
+        background-color: #072238;
+        padding: 0px 20px;
+    }
+
+    footer div {
+        height: 40vh;
+        width: 40vw;
+    }
+
+    footer>div:nth-child(1) a,
+    footer div span {
+        font-family: sans-serif;
+        font-size: 15px;
+        line-height: 18px;
+        color: rgb(199, 224, 248);
+    }
+
+    footer>div:nth-last-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 20px 0px;
+    }
+
+    footer>div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 20px 0px;
+    }
+
+    footer>div:nth-child(2) {
+        display: none;
+    }
+
+    footer>div:nth-child(3) span:nth-child(5) {
+        display: block;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer>div:nth-last-child(1) span a img {
+        width: 50px;
+        height: 50px;
+        background-color: none;
+        border-radius: 50px;
+        transition: transform 0.4s ease-in-out;
+
+    }
+
+    footer>div:nth-last-child(1) span a img:hover {
+        transform: rotate(360deg);
+    }
+
+    .footer-useful-link {
+        display: flex;
+        height: 30px;
+        flex-direction: column;
+        justify-content: start;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 20px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .footer-bar {
+        margin-top: 5px;
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300px;
+        line-height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #001020;
+        color: white;
+    }
+}
